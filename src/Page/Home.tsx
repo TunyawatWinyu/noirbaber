@@ -1,7 +1,8 @@
 import Craft from "../components/Home/Craft";
 import HomeHero from "../components/Home/HomeHero";
-import Service from "../components/Home/Service";
 import Navbar from "../components/Navbar";
+import Essential from "../components/Home/Essential";
+import More from "../components/Home/More";
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <main>
         <HomeHero />
         <Craft />
-        <Service />
+        <Essential />
+        <More />
       </main>
     </>
   );

@@ -30,10 +30,10 @@ const Navbar = () => {
       <div className="flex justify-around font-main items-center">
         <h1 className="text-4xl text-white tracking-widest">NOIR BABER</h1>
         <div className="">
-          <ul className="flex justify-between gap-6 font-secondary font-semibold text-xs text-main-font tracking-widest">
+          <ul className="flex justify-between gap-6 font-secondary font-semibold text-xs text-secondary-font tracking-widest ">
             {menu_navbar.map((el) => {
               return (
-                <li>
+                <li className="transition-all duration-200 ease-in-out hover:text-white">
                   <Link to={el.path}>{el.name}</Link>
                 </li>
               );
