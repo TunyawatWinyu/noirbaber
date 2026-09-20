@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-main: "Bebas Neue", sans-serif;
+  --font-secondary: "Barlow", sans-serif;
+
+  --color-main-bg: #151515;
+  --color-main-font: #eeeae2;
+  --color-effect: #a85f45;
+  --color-secondary-font: #a6a29b;
+  --color-border: #2a2a2a;
+  --color-secondary-bg: #1e1e1e;
+}
