@@ -3,6 +3,7 @@ import HomeHero from "../components/Home/HomeHero";
 import Navbar from "../components/Navbar";
 import Essential from "../components/Home/Essential";
 import More from "../components/Home/More";
+import Details from "../components/Home/Details";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Craft />
         <Essential />
         <More />
+        <Details />
       </main>
     </>
   );

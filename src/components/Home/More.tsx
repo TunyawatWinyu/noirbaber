@@ -4,7 +4,7 @@ import { SquareShare } from "reicon-react";
 
 const More = () => {
   return (
-    <section className="flex justify-between items-center bg-main-bg">
+    <section className="flex justify-between items-center bg-main-bg xl:px-45">
       <div className="mx-10 my-30">
         <img className="w-300 h-150 object-cover" src={moreHero} alt="tools" />
       </div>
@@ -14,7 +14,7 @@ const More = () => {
             02 — OUR PHILOSOPHY
           </p>
           <h1 className="font-main tracking-widest text-white text-8xl">
-            MORE <br /> THAN A HAIRCUT.
+            MORE THAN A HAIRCUT.
           </h1>
         </div>
         <div className="flex flex-col gap-7 w-100">
@@ -22,7 +22,7 @@ const More = () => {
             We listen first, then shape every line with purpose. <br /> The
             result is personal, precise and built to last.
           </p>
-          <div className="h-[1px] w-90 bg-secondary-font/20"></div>
+          <div className="h-[1px] w-90 xl:w-150 bg-secondary-font/20"></div>
         </div>
         <div className="grid grid-cols-3 ">
           <div className="flex flex-col mx-5">

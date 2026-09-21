@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HomeHero = () => {
   return (
-    <div className="flex justify-between px-5 py-30 bg-main-bg border-b border-b-secondary-font">
+    <div className="flex justify-between px-10 py-30 xl:px-55 bg-main-bg border-b border-b-secondary-font">
       <div className="flex flex-col gap-4">
         <span className="font-secondary tracking-widest font-semibold text-xs text-effect">
           MILANO - EST. 2018
