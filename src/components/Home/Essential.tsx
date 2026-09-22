@@ -23,7 +23,7 @@ const Essential = () => {
     },
   ];
   return (
-    <section className="flex flex-col bg-secondary-font/40 gap-8 py-20 px-10 xl:px-45">
+    <section className="flex flex-col bg-secondary-font/40 gap-8 py-20 px-10 xl:px-5 2xl:px-45">
       <div className="flex justify-between items-end-safe mx-10">
         <div className="flex flex-col justify-end gap-4">
           <p className="font-secondary font-semibold tracking-widest text-xs text-effect">

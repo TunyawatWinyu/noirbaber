@@ -4,9 +4,9 @@ import { SquareShare } from "reicon-react";
 
 const More = () => {
   return (
-    <section className="flex justify-between items-center bg-main-bg xl:px-45">
-      <div className="mx-10 my-30">
-        <img className="w-300 h-150 object-cover" src={moreHero} alt="tools" />
+    <section className="flex gap-8 justify-between items-center bg-main-bg xl:px-5 2xl:px-45">
+      <div className="my-30">
+        <img className="w-400 h-120 object-cover" src={moreHero} alt="tools" />
       </div>
       <div className="flex flex-col gap-6">
         <div className="flex flex-col justify-end gap-4">

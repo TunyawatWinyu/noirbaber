@@ -2,7 +2,7 @@ import craftHero from "../../assets/img/craft-hands.jpg";
 
 const Craft = () => {
   return (
-    <div className="flex justify-between items-center gap-7 bg-main-bg py-9 px-9 xl:px-55">
+    <div className="flex justify-between items-center gap-7 bg-main-bg py-9 px-9 xl:px-5 2xl:px-55">
       <p className="font-secondary text-effect text-xs tracking-widest font-semibold">
         THE CRAFT
       </p>

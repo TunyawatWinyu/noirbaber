@@ -37,7 +37,7 @@ const Details = () => {
   ];
 
   return (
-    <section className="w-full bg-third-bg xl:px-55 xl:py-50">
+    <section className="w-full bg-third-bg xl:px-5 2xl:px-55 xl:py-50">
       {/* HEADER */}
       <div className="flex w-full items-end justify-between">
         <div className="flex flex-col gap-4">
@@ -55,6 +55,7 @@ const Details = () => {
           className="
             flex
             items-center
+            text-sm
             gap-4
             border
             px-6

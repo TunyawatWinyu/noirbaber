@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -25,16 +25,23 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 py-4 bg-main-bg transition-all ${scrolled ? "backdrop-blur-xs bg-main-bg/50 border-b border-b-secondary-font/20" : ""}`}
+      className={`fixed top-0 left-0 w-full z-50 py-7 bg-main-bg transition-all ${scrolled ? "backdrop-blur-xs bg-main-bg/80 border-b border-b-secondary-font/20" : ""}`}
     >
       <div className="flex justify-around font-main items-center">
         <h1 className="text-4xl text-white tracking-widest">NOIR BABER</h1>
         <div className="">
-          <ul className="flex justify-between gap-6 font-secondary font-semibold text-xs text-secondary-font tracking-widest ">
+          <ul className="flex justify-between gap-8 font-secondary font-semibold text-xs text-secondary-font tracking-widest ">
             {menu_navbar.map((el) => {
               return (
-                <li className="transition-all duration-200 ease-in-out hover:text-white">
-                  <Link to={el.path}>{el.name}</Link>
+                <li>
+                  <NavLink
+                    to={el.path}
+                    className={({ isActive }) =>
+                      `transition-all duration-200 ease-in-out hover:text-white ${isActive ? "text-white" : "text-secondary-font"}`
+                    }
+                  >
+                    {el.name}
+                  </NavLink>
                 </li>
               );
             })}
