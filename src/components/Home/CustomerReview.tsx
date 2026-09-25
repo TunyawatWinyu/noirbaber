@@ -54,7 +54,7 @@ const CustomerReview = () => {
   };
 
   return (
-    <section className="bg-main-bg h-full w-full py-30">
+    <section className="bg-main-bg h-full w-full py-30 border-b border-b-secondary-font/20">
       <div className="flex flex-col gap-8 justify-center items-center">
         <span className="font-secondary text-xs text-effect tracking-wider">
           CLIENT NOTES

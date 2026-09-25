@@ -6,6 +6,8 @@ import More from "../components/Home/More";
 import Details from "../components/Home/Details";
 import Team from "../components/Home/Team";
 import CustomerReview from "../components/Home/CustomerReview";
+import VisitUs from "../components/Home/VisitUs";
+import Footer from "../components/Home/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
         <Details />
         <Team />
         <CustomerReview />
+        <VisitUs />
+        <Footer />
       </main>
     </>
   );
