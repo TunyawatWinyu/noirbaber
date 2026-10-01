@@ -1,41 +1,8 @@
-import image1 from "../../assets/img/gallery-beard.jpg";
-import image2 from "../../assets/img/craft-hands.jpg";
-import image3 from "../../assets/img/gallery-studio.jpg";
-import image4 from "../../assets/img/gallery-tools.jpg";
-import image5 from "../../assets/img/gallery-fade.jpg";
-
 import { SquareShare } from "reicon-react";
 import { Link } from "react-router-dom";
+import { img_details } from "../../Data/Data";
 
 const Details = () => {
-  const img_details = [
-    {
-      src: image1,
-      title: "FADE",
-      className: "col-span-1 row-span-2",
-    },
-    {
-      src: image2,
-      title: "BEARD",
-      className: "col-span-1 row-span-1",
-    },
-    {
-      src: image3,
-      title: "STUDIO",
-      className: "col-span-2 row-span-1",
-    },
-    {
-      src: image4,
-      title: "HAIRCUT",
-      className: "col-span-1 row-span-1",
-    },
-    {
-      src: image5,
-      title: "DETAIL",
-      className: "col-span-2 row-span-1",
-    },
-  ];
-
   return (
     <section className="w-full bg-third-bg xl:px-5 2xl:px-55 xl:py-50">
       {/* HEADER */}

@@ -18,7 +18,7 @@ const ServiceHero = () => {
           </p>
         </div>
       </div>
-      <div className=" border-t border-t-secondary-font border-b border-b-secondary-font h-20"></div>
+      <div className=" border-t border-t-secondary-font/20 h-20"></div>
     </section>
   );
 };

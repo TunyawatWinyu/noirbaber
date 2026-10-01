@@ -1,27 +1,8 @@
 import { Link } from "react-router-dom";
 import { SquareShare } from "reicon-react";
+import { Essential_props } from "../../Data/Data";
 
 const Essential = () => {
-  const Essential_props = [
-    {
-      number: "01",
-      h3: "PRECISION HAIRCUT",
-      p: "Consultation, wash, cut and considered styling.",
-      span: "45 min / €25",
-    },
-    {
-      number: "02",
-      h3: "SIGNATURE FADE",
-      p: "Seamless skin fade with a tailored finish.",
-      span: "50 min / €28",
-    },
-    {
-      number: "03",
-      h3: "SCISSOR CUT",
-      p: "Shape and movement built entirely by hand.",
-      span: "50 min / €30",
-    },
-  ];
   return (
     <section className="flex flex-col bg-secondary-font/40 gap-8 py-20 px-10 xl:px-5 2xl:px-45">
       <div className="flex justify-between items-end-safe mx-10">

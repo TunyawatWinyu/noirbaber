@@ -1,47 +1,7 @@
 import { useState } from "react";
 import { Star } from "reicon-react";
+import { reviews } from "../../Data/Data";
 
-const reviews = [
-  {
-    id: 1,
-    name: "Luca Bianchi",
-    rating: 5,
-    ratingText: "Excellent",
-    review:
-      "Esperienza fantastica. Ambiente elegante e personale molto professionale.",
-  },
-  {
-    id: 2,
-    name: "Marco Rossi",
-    rating: 5,
-    ratingText: "Excellent",
-    review:
-      "Finalmente ho trovato il mio barbiere di fiducia. Grande attenzione ai dettagli.",
-  },
-  {
-    id: 3,
-    name: "Andrea Moretti",
-    rating: 4,
-    ratingText: "Very Good",
-    review:
-      "Locale davvero curato e atmosfera piacevole. Il taglio è stato fatto con grande precisione.",
-  },
-  {
-    id: 4,
-    name: "Davide Romano",
-    rating: 5,
-    ratingText: "Excellent",
-    review: "Servizio eccellente dall'inizio alla fine. Tornerò sicuramente.",
-  },
-  {
-    id: 5,
-    name: "Matteo Ferri",
-    rating: 5,
-    ratingText: "Excellent",
-    review:
-      "Qualità, professionalità e attenzione ai dettagli. Consigliatissimo.",
-  },
-];
 const CustomerReview = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 

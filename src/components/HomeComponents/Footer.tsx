@@ -1,13 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { Mailbox, Phone, Pin } from "reicon-react";
+import { menu_navbar } from "../../Data/Data";
 const Footer = () => {
-  const menu_navbar = [
-    { name: "HOME", path: "/home" },
-    { name: "SERVICE", path: "/service" },
-    { name: "ABOUT", path: "/about" },
-    { name: "GALLERY", path: "/gallery" },
-    { name: "CONTATTI", path: "/contatti" },
-  ];
   return (
     <footer className="flex justify-between py-20 px-10 bg-main-bg">
       <div className="flex flex-col">

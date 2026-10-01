@@ -1,20 +1,4 @@
-import alex from "../../assets/img/team-alex.jpg";
-import david from "../../assets/img/team-david.jpg";
-
-const staff = [
-  {
-    name: "ALEX MORETTI",
-    role: "MASTER BABER",
-    skill: "Fade & Modern Cut",
-    image: alex,
-  },
-  {
-    name: "DAVID ROMANO",
-    role: "BABER",
-    skill: "Clssic Cuts & Beard",
-    image: david,
-  },
-];
+import { staff } from "../../Data/Data";
 
 const Team = () => {
   return (

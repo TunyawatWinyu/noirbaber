@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { menu_navbar } from "../Data/Data";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
-  const menu_navbar = [
-    { name: "HOME", path: "/home" },
-    { name: "SERVICE", path: "/service" },
-    { name: "ABOUT", path: "/about" },
-    { name: "GALLERY", path: "/gallery" },
-    { name: "CONTATTI", path: "/contatti" },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
