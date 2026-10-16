@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { ArrowRightUp } from "reicon-react";
 import philosophyHero from "../../assets/img/craft-hands.jpg";
 
 const Philosophy = () => {
