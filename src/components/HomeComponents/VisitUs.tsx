@@ -4,13 +4,13 @@ import { ArrowRight5 } from "reicon-react";
 const VisitUs = () => {
   return (
     <section className="bg-main-bg h-full w-full py-30 px-10 border-b border-b-secondary-font/20">
-      <div className="flex justify-between gap-10">
+      <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
         <div className="flex flex-col">
           <div className="flex flex-col gap-4">
             <span className="font-secondary text-xs text-effect tracking-wider">
               MILANO, ITALY
             </span>
-            <h1 className="text-8xl font-main text-white tracking-wider">
+            <h1 className="text-5xl lg:text-8xl font-main text-white tracking-wider">
               COME VISIT US.
             </h1>
           </div>
@@ -19,7 +19,7 @@ const VisitUs = () => {
           <div className="h-[1px] w-150 bg-secondary-bg my-15"></div>
 
           <div className="flex flex-col gap-6">
-            <div className="flex justify-between">
+            <div className="flex flex-col gap-15 lg:flex-row lg:justify-between lg:gap-0">
               {/* Address */}
               <div className="flex flex-col gap-4">
                 <p className="font-secondary text-white text-sm font-semibold tracking-widest">
@@ -49,16 +49,16 @@ const VisitUs = () => {
                 </span>
               </div>
             </div>
-            <div className="flex justify-between gap-6">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
               <Link
-                className="flex items-center gap-4 font-secondary text-black text-sm tracking-widest bg-white py-3 px-5 border transition-all duration-200 ease-in-out hover:bg-effect hover:text-black hover:border"
+                className="flex items-center gap-4 font-secondary text-black text-sm tracking-widest w-50 bg-white py-3 px-5 border transition-all duration-200 ease-in-out hover:bg-effect hover:text-black hover:border"
                 to="/get"
               >
                 GET DIRECTION <ArrowRight5 size={20} />
               </Link>
               <Link
-                className="flex items-center gap-4 font-secondary text-white text-sm tracking-widest  py-3 px-5 border transition-all duration-200 ease-in-out hover:bg-white hover:text-black hover:border"
-                to="/get"
+                className="flex items-center gap-4 font-secondary text-white text-sm tracking-widest w-50  py-3 px-5 border transition-all duration-200 ease-in-out hover:bg-white hover:text-black hover:border"
+                to="/contatti"
               >
                 CONTACT US <ArrowRight5 size={20} />
               </Link>

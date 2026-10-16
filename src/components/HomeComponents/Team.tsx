@@ -2,17 +2,17 @@ import { staff } from "../../Data/Data";
 
 const Team = () => {
   return (
-    <section className="flex justify-between bg-secondary-font/35 gap-8 px-5 py-20 xl:px-5 2xl:px-55">
-      <div className="flex flex-col gap-4 w-100">
+    <section className="flex flex-col lg:flex-row lg:justify-between bg-secondary-font/35 gap-8 px-5 py-20 lg:px-10 2xl:px-55">
+      <div className="flex flex-col items-center lg:items-baseline gap-4 w-full  lg:w-100">
         <p className="font-secondary text-xs font-semibold tracking-widest text-effect">
           04 — THE TEAM
         </p>
 
-        <h1 className="font-main text-8xl tracking-widest text-main-bg">
+        <h1 className="font-main text-4xl lg:text-8xl tracking-widest text-main-bg">
           MEET THE BARBERS.
         </h1>
       </div>
-      <div className="flex gap-6">
+      <div className="flex flex-col lg:flex-row gap-6">
         {staff.map((staff) => {
           return (
             <div className="flex flex-col gap-4 border-b border-b-secondary-font pb-5 ">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HomeHero = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between gap-16 px-10 py-30 xl:px-16 2xl:px-24 bg-main-bg border-b border-b-secondary-font">
+    <div className="flex flex-col lg:flex-row justify-between gap-16 px-10 py-30 lg:py-40 xl:px-16 2xl:px-24 bg-main-bg border-b border-b-secondary-font">
       {/* LEFT */}
       <div className="flex flex-col gap-4 min-w-0">
         <span className="font-secondary tracking-widest font-semibold text-xs text-effect">

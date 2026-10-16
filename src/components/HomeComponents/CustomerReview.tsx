@@ -22,8 +22,8 @@ const CustomerReview = () => {
         <div className="flex flex-col items-center">
           {/* CARD */}
 
-          <div className="flex flex-col gap-4 mt-4 text-center w-200">
-            <h3 className="text-6xl text-white font-main tracking-widest">{`"${reviews[currentIndex].review}"`}</h3>
+          <div className="flex flex-col gap-4 mt-4 text-center w-full px-10 lg:w-200 lg:px-0">
+            <h3 className="text-3xl lg:text-6xl text-white font-main tracking-widest">{`"${reviews[currentIndex].review}"`}</h3>
 
             <div className="flex justify-center items-center gap-1 mt-4">
               {Array.from({ length: reviews[currentIndex].rating }).map(

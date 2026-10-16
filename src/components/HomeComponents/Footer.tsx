@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { menu_navbar } from "../../Data/Data";
 const Footer = () => {
   return (
-    <footer className="flex justify-between py-20 px-10 bg-main-bg">
+    <footer className="flex flex-col lg:flex-row lg:justify-between gap-15 lg:gap-0 py-20 px-10 bg-main-bg">
       <div className="flex flex-col">
         <a className="font-main text-4xl text-white tracking-widest cursor-pointer my-4">
           NOIRBABER

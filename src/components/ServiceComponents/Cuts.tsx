@@ -6,8 +6,8 @@ const Cuts = () => {
     <section className="bg-main-bg px-15">
       {typeCuts.map((type) => {
         return (
-          <div className="border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 flex justify-between py-20">
-            <div className="flex flex-col gap-4">
+          <div className="border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 flex flex-col lg:flex-row lg:justify-between py-20">
+            <div className="flex flex-col items-center lg:items-baseline gap-4">
               <span className="font-secondary font-semibold tracking-widest text-xs text-effect">
                 0{type.id}
               </span>
@@ -16,11 +16,17 @@ const Cuts = () => {
             <div>
               {type.cuts.map((cut) => {
                 return (
-                  <div className="w-full flex justify-between gap-30 items-center border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 py-6">
-                    <p className="font-main text-4xl text-white">{cut.name}</p>
-                    <p className="font-secondary text-sm text-secondary-font">
-                      {cut.description}
-                    </p>
+                  <div className="w-full flex flex-col lg:flex-row lg:justify-between gap-10 lg:gap-30 items-center border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 mt-5 lg:mt-0 py-6">
+                    <div className="flex flex-col lg:flex-row lg:justify-center items-center">
+                      <p className="font-main text-4xl text-white">
+                        {cut.name}
+                      </p>
+                    </div>
+                    <div className="flex flex-col lg:flex-row justify-center items-center">
+                      <p className="font-secondary lg:w-full text-sm text-secondary-font">
+                        {cut.description}
+                      </p>
+                    </div>
                     <div className="flex gap-6 items-center justify-center">
                       <div className="flex flex-col">
                         <span className="font-main text-white text-3xl">

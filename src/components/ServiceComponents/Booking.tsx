@@ -8,7 +8,7 @@ const Booking = () => {
         <span className="font-secondary text-xs text-effect tracking-wider">
           YOUR NEXT CUT
         </span>
-        <h1 className="font-main text-9xl text-white tracking-widest">
+        <h1 className="font-main text-5xl lg:text-9xl text-white tracking-widest">
           MAKE IT YOURS.
         </h1>
         <Link

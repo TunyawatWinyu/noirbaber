@@ -4,15 +4,15 @@ import { img_details } from "../../Data/Data";
 
 const Details = () => {
   return (
-    <section className="w-full bg-third-bg xl:px-5 2xl:px-55 xl:py-50">
+    <section className="w-full py-10 bg-third-bg lg:px-10 lg:py-40 xl:px-5 2xl:px-55 xl:py-50">
       {/* HEADER */}
-      <div className="flex w-full items-end justify-between">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col items-center w-full gap-4 lg:items-baseline lg:px-10 lg:justify-between">
+        <div className="flex flex-col gap-4 items-center lg:items-baseline">
           <p className="font-secondary text-xs font-semibold tracking-widest text-secondary-font">
             03 — SELECTED WORK
           </p>
 
-          <h1 className="font-main text-8xl tracking-widest text-white">
+          <h1 className="font-main text-5xl lg:text-8xl tracking-widest text-white">
             THE DETAILS.
           </h1>
         </div>
@@ -45,7 +45,7 @@ const Details = () => {
       </div>
 
       {/* GALLERY */}
-      <div className="mt-20 grid h-[650px] grid-cols-4 grid-rows-2 gap-3">
+      <div className="mt-20 mx-5 flex flex-col lg:grid lg:h-[650px]  lg:grid-cols-4 lg:grid-rows-2 gap-3">
         {img_details.map((image) => (
           <div
             key={image.title}

@@ -68,7 +68,7 @@ const More = () => {
 
           {/* BUTTON */}
           <Link
-            to="/our-story"
+            to="/about"
             className="flex w-fit items-center justify-center gap-4 border border-secondary-font px-6 py-3 font-main text-md tracking-widest text-white transition-all duration-200 ease-in-out hover:bg-white hover:text-black"
           >
             OUR STORY

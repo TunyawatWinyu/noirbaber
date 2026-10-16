@@ -1,6 +1,6 @@
 const GalleryHero = () => {
   return (
-    <section className="bg-main-bg px-15 py-50 border-b border-b-secondary-font/20">
+    <section className="bg-main-bg px-15 lg:pt-50 xl:pb-30 2xl:py-50 border-b border-b-secondary-font/20">
       <div className="flex justify-between">
         <div className="flex flex-col gap-4">
           <span className="font-secondary text-xs text-effect font-semibold tracking-widest">

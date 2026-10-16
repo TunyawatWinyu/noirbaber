@@ -1,5 +1,8 @@
 import Navbar from "../components/Navbar";
 import GalleryHero from "../components/GalleryComponents/GalleryHero";
+import GalleryImage from "../components/GalleryComponents/GalleryImage";
+import Booking from "../components/ServiceComponents/Booking";
+import Footer from "../components/HomeComponents/Footer";
 
 const Gallery = () => {
   return (
@@ -7,6 +10,9 @@ const Gallery = () => {
       <Navbar />
       <main>
         <GalleryHero />
+        <GalleryImage />
+        <Booking />
+        <Footer />
       </main>
     </>
   );
