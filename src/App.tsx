@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import "./index.css";
 import Home from "./Page/Home";
 import Service from "./Page/Service";
@@ -20,6 +20,7 @@ function App() {
     <>
       <ScrollTop />
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/service" element={<Service />} />
         <Route path="/about" element={<About />} />
