@@ -1,6 +1,6 @@
 const ContactInfo = () => {
   return (
-    <section className="w-full flex flex-col items-center md:flex-row md:justify-between lg:flex-col lg:items-baseline gap-15  px-10 py-10 lg:py-30 lg:w-120 bg-main-bg">
+    <section className="w-full flex flex-col md:flex-row md:justify-between lg:flex-col lg:items-baseline gap-15  px-10 py-10 lg:py-30 lg:w-120 bg-main-bg">
       <div className="flex flex-col">
         <p className="font-secondary text-secondary-font text-sm font-semibold tracking-widest">
           ADDRESS

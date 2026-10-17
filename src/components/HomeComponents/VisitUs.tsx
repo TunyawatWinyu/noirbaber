@@ -16,7 +16,7 @@ const VisitUs = () => {
           </div>
 
           {/* divider */}
-          <div className="h-[1px] w-150 bg-secondary-bg my-15"></div>
+          <div className="h-px w-full max-w-[600px] bg-secondary-bg my-10 lg:my-15"></div>
 
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-15 lg:flex-row lg:justify-between lg:gap-0">

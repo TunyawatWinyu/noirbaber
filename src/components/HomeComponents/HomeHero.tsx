@@ -46,13 +46,12 @@ const HomeHero = () => {
       </div>
 
       {/* IMAGE */}
-      <div className="relative shrink-0">
+      <div className="relative w-full min-w-0 lg:w-auto">
         <img
           src={homeHero}
-          className="h-120 w-full max-w-120 lg:h-140 2xl:h-160 object-cover"
+          className="w-full h-[300px] sm:h-[400px] lg:h-140 lg:w-[480px] 2xl:h-160 2xl:w-[600px] object-cover"
           alt="Barber studio"
         />
-
         <p className="absolute bottom-6 left-6 z-20 font-main text-white tracking-widest">
           01 / STUDIO
         </p>

@@ -17,7 +17,7 @@ function App() {
     return null;
   };
   return (
-    <>
+    <div>
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
@@ -27,7 +27,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contatti" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

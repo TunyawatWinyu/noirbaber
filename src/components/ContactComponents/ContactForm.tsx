@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <section className="bg-main-bg lg:w-full pt-30 lg:pb-50 px-10 gap-4">
+    <section className="bg-main-bg lg:w-full py-30 lg:pb-50 px-10 gap-4">
       <form>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col lg:flex-row gap-6">
@@ -34,7 +34,7 @@ const ContactForm = () => {
               </span>
               <input
                 className="font-secondary text-white text-sm font-semibold 
-                border-b py-2 w-165"
+                border-b py-2 w-full"
                 type="text"
                 placeholder="How can we have?"
               />
@@ -47,7 +47,7 @@ const ContactForm = () => {
               </span>
               <textarea
                 className="font-secondary text-white text-sm font-semibold 
-                border-b py-2 w-165"
+                border-b py-2 w-full"
                 placeholder="How can we have?"
               ></textarea>
             </label>
