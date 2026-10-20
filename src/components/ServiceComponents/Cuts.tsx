@@ -18,7 +18,7 @@ const Cuts = () => {
               0{type.id}
             </span>
 
-            <h2 className="font-main text-6xl text-white">
+            <h2 className="font-main text-4xl text-white">
               {t(type.translationKey)}
             </h2>
           </div>

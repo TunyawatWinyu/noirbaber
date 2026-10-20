@@ -20,7 +20,7 @@ import david from "../assets/img/team-david.jpg";
 export const typeCuts: CutType[] = [
   {
     id: 1,
-    translationKey: "service.cuts.haircuts",
+    translationKey: "service.cuts.services.1.haircuts",
     cuts: [
       {
         id: 1,
@@ -41,7 +41,7 @@ export const typeCuts: CutType[] = [
   },
   {
     id: 2,
-    translationKey: "BEARD",
+    translationKey: "service.cuts.services.2.haircuts",
     cuts: [
       {
         id: 1,
@@ -57,7 +57,7 @@ export const typeCuts: CutType[] = [
   },
   {
     id: 3,
-    translationKey: "COMBINATIONS",
+    translationKey: "service.cuts.services.3.haircuts",
     cuts: [
       {
         id: 1,
@@ -73,7 +73,7 @@ export const typeCuts: CutType[] = [
   },
   {
     id: 4,
-    translationKey: "EXTRAS",
+    translationKey: "service.cuts.services.4.haircuts",
     cuts: [
       {
         id: 1,
