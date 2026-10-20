@@ -155,7 +155,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={`inline-block tracking-widest text-sm px-6 py-3 font-semibold bg-effect`}
               >
-                PRENOTA UN TAVOLO
+                {t("nav.mobileBooking")}
               </Link>
             </li>
           </ul>
