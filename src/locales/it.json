@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "CHI SIAMO",
+    "service": "SERVIZIO",
+    "gallery": "GALLERIA",
+    "contact": "CONTATTI",
+    "booking": "PRENOTA ORA",
+    "mobileBooking": "Prenota un tavolo",
+    "openMenu": "Apri menu"
+  },
+  "home": {
+    "hero": {
+      "established": "MILANO — DAL 2018",
+      "title": "PRECISIONE IN OGNI TAGLIO.",
+      "description": "Grooming moderno, pensato per ogni individuo. Uno studio dedicato a tagli precisi e uno stile discreto.",
+      "bookButton": "PRENOTA UN APPUNTAMENTO",
+      "serviceButton": "SCOPRI I SERVIZI"
+    },
+    "craft": {
+      "label": "L'ARTE DEL TAGLIO",
+      "title": "REALIZZATO CON PRECISIONE."
+    },
+    "essential": {
+      "label": "01 - SERVIZI",
+      "title": "I NOSTRI SERVIZI.",
+      "description": "Un menu essenziale. Scelte chiare, tempi precisi, nessun extra superfluo.",
+      "button": "SCOPRI TUTTI I SERVIZI",
+      "cards": [
+        {
+          "number": "01",
+          "title": "TAGLIO",
+          "description": "Un taglio preciso, pensato per il tuo stile e la tua personalità.",
+          "price": "45 min / €30"
+        },
+        {
+          "number": "02",
+          "title": "BARBA",
+          "description": "Cura professionale della barba per un look pulito e raffinato.",
+          "price": "50 min / €20"
+        },
+        {
+          "number": "03",
+          "title": "COMBO",
+          "description": "L'esperienza completa: taglio e cura della barba.",
+          "price": " 50 min / €45"
+        }
+      ]
+    },
+    "more": {
+      "label": "02 — LA NOSTRA FILOSOFIA",
+      "title": "PIÙ DI UN TAGLIO.",
+      "description": "Ascoltiamo prima, poi modelliamo ogni linea con precisione.\nIl risultato è personale, preciso e pensato per durare.",
+      "stats": {
+        "years": "ANNI",
+        "rating": "VALUTAZIONE",
+        "clients": "CLIENTI"
+      },
+      "button": "LA NOSTRA STORIA"
+    },
+    "details": {
+      "label": "03 — LAVORI SELEZIONATI",
+      "title": "I DETTAGLI.",
+      "button": "VEDI LA GALLERIA"
+    },
+    "team": {
+      "label": "04 — IL TEAM",
+      "title": "INCONTRA I NOSTRI BARBIERI.",
+      "staff": {
+        "barber1": {
+          "role": "BARBIERE",
+          "skill": "SPECIALISTA IN SFUMATURE"
+        },
+        "barber2": {
+          "role": "BARBIERE",
+          "skill": "ESPERTO DI BARBA"
+        }
+      }
+    },
+    "customerReview": {
+      "label": "RECENSIONI DEI CLIENTI",
+      "reviews": {
+        "1": "Esperienza fantastica. Ambiente elegante e personale molto professionale.",
+        "2": "Finalmente ho trovato il mio barbiere di fiducia. Grande attenzione ai dettagli.",
+        "3": "Locale davvero curato e atmosfera piacevole. Il taglio è stato fatto con grande precisione.",
+        "4": "Servizio eccellente dall'inizio alla fine. Tornerò sicuramente.",
+        "5": "Qualità, professionalità e attenzione ai dettagli. Consigliatissimo."
+      },
+      "rating": {
+        "excellent": "ECCELLENTE",
+        "veryGood": "MOLTO BUONO"
+      }
+    },
+    "visitUs": {
+      "label": "MILANO, ITALIA",
+      "title": "VIENI A TROVARCI.",
+      "address": {
+        "label": "INDIRIZZO",
+        "street": "VIA EXAMPLE 21",
+        "city": "Milano, Italia"
+      },
+      "openingHours": {
+        "label": "ORARI DI APERTURA",
+        "weekdays": "LUN — VEN 09:00 — 19:30",
+        "saturday": "SAB 09:00 — 18:00",
+        "sunday": "DOM CHIUSO"
+      },
+      "buttons": {
+        "directions": "INDICAZIONI",
+        "contact": "CONTATTACI"
+      }
+    },
+    "footer": {
+      "description": "Grooming moderno.\nStile senza tempo.",
+      "navigate": "NAVIGA",
+      "visit": "VIENI A TROVARCI",
+      "address": "VIA EXAMPLE 22",
+      "hours": {
+        "weekdays": "LUN — VEN \n09:00 — 19:30",
+        "saturday": "SAB \n09:00 — 18:00",
+        "sunday": "DOM CHIUSO"
+      }
+    }
+  },
+  "service": {
+    "serviceHero": {
+      "label": "I NOSTRI SERVIZI",
+      "title": "SERVIZI &\nRITUALI.",
+      "description": "Una selezione accurata di servizi, pensati per valorizzare i tuoi lineamenti, la tua routine e il tuo stile personale."
+    },
+    "cuts": {
+      "haircuts": "TAGLI DI CAPELLI",
+      "minutes": "min",
+      "services": {
+        "1": {
+          "1": {
+            "name": "TAGLIO DI PRECISIONE",
+            "description": "Consulenza, lavaggio, taglio e styling curato."
+          },
+          "2": {
+            "name": "SIGNATURE FADE",
+            "description": "Sfumatura skin fade impeccabile con finitura personalizzata."
+          },
+          "3": {
+            "name": "TAGLIO A FORBICE",
+            "description": "Forma e movimento creati interamente a mano."
+          }
+        },
+        "2": {
+          "1": {
+            "name": "DESIGN BARBA",
+            "description": "Regolazione, definizione precisa e rifinitura della barba."
+          },
+          "2": {
+            "name": "RITUALE BARBA",
+            "description": "Asciugamano caldo, definizione, dettagli e trattamento."
+          }
+        },
+        "3": {
+          "1": {
+            "name": "GROOMING COMPLETO",
+            "description": "Taglio capelli, definizione barba e styling completo."
+          },
+          "2": {
+            "name": "THE NOIR SESSION",
+            "description": "Il nostro rituale completo di taglio, barba e cura."
+          }
+        },
+        "4": {
+          "1": {
+            "name": "FINITURA PERFETTA",
+            "description": "Rifinitura della nuca, contorni e refresh dello styling."
+          },
+          "2": {
+            "name": "GREY BLENDING",
+            "description": "Riflessi naturali per capelli o barba."
+          }
+        }
+      }
+    }
+  }
+}

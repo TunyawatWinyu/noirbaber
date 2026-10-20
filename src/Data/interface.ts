@@ -1,13 +1,12 @@
 interface Cut {
-  name: string;
-  description: string;
+  id: number;
   price: number;
   time: number;
 }
 
 export interface CutType {
   id: number;
-  type: string;
+  translationKey: string;
   cuts: Cut[];
 }
 
@@ -25,7 +24,7 @@ export interface PropsEssential {
 }
 
 export interface NavbarMenu {
-  name: string;
+  translationKey: string;
   path: string;
 }
 
@@ -40,6 +39,4 @@ export interface Review {
   id: number;
   name: string;
   rating: number;
-  ratingText: string;
-  review: string;
 }

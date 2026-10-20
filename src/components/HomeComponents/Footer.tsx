@@ -1,83 +1,90 @@
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { menu_navbar } from "../../Data/Data";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer className="flex flex-col lg:flex-row lg:justify-between gap-15 lg:gap-0 py-20 px-10 bg-main-bg">
+    <footer className="flex flex-col gap-15 bg-main-bg px-10 py-20 lg:flex-row lg:justify-between lg:gap-0">
+      {/* BRAND */}
       <div className="flex flex-col">
-        <a className="font-main text-4xl text-white tracking-widest cursor-pointer my-4">
+        <a className="my-4 cursor-pointer font-main text-4xl tracking-widest text-white">
           NOIRBABER
         </a>
-        <span className="font-secondary text-secondary-font text-sm flex flex-col">
-          Modern grooming. <br /> Timeless style.
+
+        <span className="flex flex-col whitespace-pre-line font-secondary text-sm text-secondary-font">
+          {t("home.footer.description")}
         </span>
       </div>
+
+      {/* NAVIGATION */}
       <div>
-        <h3 className="flex flex-col text-xs font-secondary text-white font-semibold tracking-widest cursor-pointer my-4">
-          NAVIGATE
+        <h3 className="my-4 cursor-pointer font-secondary text-xs font-semibold tracking-widest text-white">
+          {t("home.footer.navigate")}
         </h3>
+
         <div>
-          {menu_navbar.map((el) => {
-            return (
-              <li
-                className="font-secondary text-secondary-font font-semibold cursor-pointer list-none my-4 transition duration-200 ease-in-out hover:text-white"
-                key={el.name}
-              >
-                <NavLink to={el.path} className="text-xs">
-                  {el.name}
-                </NavLink>
-              </li>
-            );
-          })}
+          {menu_navbar.map((el) => (
+            <li
+              className="my-4 list-none cursor-pointer font-secondary font-semibold text-secondary-font transition duration-200 ease-in-out hover:text-white"
+              key={el.path}
+            >
+              <NavLink to={el.path} className="text-xs">
+                {t(el.translationKey)}
+              </NavLink>
+            </li>
+          ))}
         </div>
       </div>
+
+      {/* VISIT */}
       <div>
-        <h3 className="flex flex-col text-xs font-main text-white tracking-widest cursor-pointer my-4">
-          VISIT
+        <h3 className="my-4 cursor-pointer font-main text-xs tracking-widest text-white">
+          {t("home.footer.visit")}
         </h3>
+
         <div className="flex flex-col">
-          <div className="flex">
-            <a
-              href="https://maps.app.goo.gl/UenA8PFfYnPLQBDu7"
-              className="font-secondary text-secondary-font text-xs font-semibold cursor-pointer transition hover:text-primary"
-            >
-              VIA EXAMPLE 22
-            </a>
-          </div>
-          <div className="mt-4 flex cursor-pointer">
-            <a
-              href="tel:+390212345678"
-              className="font-secondary text-secondary-font text-xs font-semibold transition hover:text-primary"
-            >
-              +39 02 1234 5678
-            </a>
-          </div>
-          <div className="mt-4 flex">
-            <a
-              href="mailto:info@osteriamilano.it"
-              className="font-secondary text-xs text-secondary-font font-semibold transition hover:text-primary"
-            >
-              info@osteriamilano.it
-            </a>
-          </div>
+          <a
+            href="https://maps.app.goo.gl/UenA8PFfYnPLQBDu7"
+            className="cursor-pointer font-secondary text-xs font-semibold text-secondary-font transition hover:text-primary"
+          >
+            {t("home.footer.address")}
+          </a>
+
+          <a
+            href="tel:+390212345678"
+            className="mt-4 font-secondary text-xs font-semibold text-secondary-font transition hover:text-primary"
+          >
+            +39 02 1234 5678
+          </a>
+
+          <a
+            href="mailto:info@osteriamilano.it"
+            className="mt-4 font-secondary text-xs font-semibold text-secondary-font transition hover:text-primary"
+          >
+            info@osteriamilano.it
+          </a>
         </div>
       </div>
+
+      {/* HOURS */}
       <div>
-        <h3 className="flex flex-col text-xs font-secondary text-white font-semibold tracking-widest cursor-pointer my-4">
-          HOURS
+        <h3 className="my-4 font-secondary text-xs font-semibold tracking-widest text-white">
+          {t("home.visitUs.openingHours.label")}
         </h3>
+
         <div className="flex flex-col">
-          <span className="font-secondary text-secondary-font text-xs tracking-wider">
-            MON — FRI 09:00 — 19:30
+          <span className="whitespace-pre-line font-secondary text-xs tracking-wider text-secondary-font">
+            {t("home.footer.hours.weekdays")}
           </span>
-        </div>
-        <div className="flex flex-col mt-4">
-          <span className="font-secondary text-secondary-font text-xs tracking-wider">
-            SAT 09:00 — 18:00
+
+          <span className="whitespace-pre-line mt-4 font-secondary text-xs tracking-wider text-secondary-font">
+            {t("home.footer.hours.saturday")}
           </span>
-        </div>
-        <div className="flex flex-col mt-4">
-          <span className="font-secondary text-secondary-font text-xs tracking-wider">
-            SUN CLOSED
+
+          <span className="mt-4 font-secondary text-xs tracking-wider text-secondary-font">
+            {t("home.footer.hours.sunday")}
           </span>
         </div>
       </div>

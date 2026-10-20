@@ -1,78 +1,96 @@
 import { Link } from "react-router-dom";
 import { ArrowRight5 } from "reicon-react";
+import { useTranslation } from "react-i18next";
 
 const VisitUs = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="bg-main-bg h-full w-full py-30 px-10 border-b border-b-secondary-font/20">
-      <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
+    <section className="h-full w-full border-b border-b-secondary-font/20 bg-main-bg px-10 py-30">
+      <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
         <div className="flex flex-col">
+          {/* HEADER */}
           <div className="flex flex-col gap-4">
-            <span className="font-secondary text-xs text-effect tracking-wider">
-              MILANO, ITALY
+            <span className="font-secondary text-xs tracking-wider text-effect">
+              {t("home.visitUs.label")}
             </span>
-            <h1 className="text-5xl lg:text-8xl font-main text-white tracking-wider">
-              COME VISIT US.
+
+            <h1 className="font-main text-5xl tracking-wider text-white lg:text-8xl">
+              {t("home.visitUs.title")}
             </h1>
           </div>
 
-          {/* divider */}
-          <div className="h-px w-full max-w-[600px] bg-secondary-bg my-10 lg:my-15"></div>
+          {/* DIVIDER */}
+          <div className="my-10 h-px w-full max-w-[600px] bg-secondary-bg lg:my-15" />
 
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-15 lg:flex-row lg:justify-between lg:gap-0">
-              {/* Address */}
+              {/* ADDRESS */}
               <div className="flex flex-col gap-4">
-                <p className="font-secondary text-white text-sm font-semibold tracking-widest">
-                  ADDRESS
+                <p className="font-secondary text-sm font-semibold tracking-widest text-white">
+                  {t("home.visitUs.address.label")}
                 </p>
-                <span className="font-secondary text-sm text-secondary-font tracking-wider">
-                  VIA EXAPLE 21
+
+                <span className="font-secondary text-sm tracking-wider text-secondary-font">
+                  {t("home.visitUs.address.street")}
                 </span>
-                <span className="font-secondary text-secondary-font text-sm tracking-wider">
-                  Milano, Italy
+
+                <span className="font-secondary text-sm tracking-wider text-secondary-font">
+                  {t("home.visitUs.address.city")}
                 </span>
               </div>
 
-              {/* Opening Hours */}
+              {/* OPENING HOURS */}
               <div className="flex flex-col gap-4">
-                <p className="font-secondary text-sm text-white font-semibold tracking-widest">
-                  OPENING HOURS
+                <p className="font-secondary text-sm font-semibold tracking-widest text-white">
+                  {t("home.visitUs.openingHours.label")}
                 </p>
-                <span className="font-secondary text-secondary-font text-sm tracking-wider">
-                  MON — FRI 09:00 — 19:30
+
+                <span className="font-secondary text-sm tracking-wider text-secondary-font">
+                  {t("home.visitUs.openingHours.weekdays")}
                 </span>
-                <span className="font-secondary text-secondary-font text-sm tracking-wider">
-                  SAT 09:00 — 18:00
+
+                <span className="font-secondary text-sm tracking-wider text-secondary-font">
+                  {t("home.visitUs.openingHours.saturday")}
                 </span>
-                <span className="font-secondary text-secondary-font text-sm tracking-wider">
-                  SUN CLOSED
+
+                <span className="font-secondary text-sm tracking-wider text-secondary-font">
+                  {t("home.visitUs.openingHours.sunday")}
                 </span>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
+
+            {/* BUTTONS */}
+            <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
               <Link
-                className="flex items-center gap-4 font-secondary text-black text-sm tracking-widest w-50 bg-white py-3 px-5 border transition-all duration-200 ease-in-out hover:bg-effect hover:text-black hover:border"
+                className="flex w-50 items-center gap-4 border bg-white px-5 py-3 font-secondary text-sm tracking-widest text-black transition-all duration-200 ease-in-out hover:bg-effect hover:text-black"
                 to="/get"
               >
-                GET DIRECTION <ArrowRight5 size={20} />
+                {t("home.visitUs.buttons.directions")}
+                <ArrowRight5 size={20} />
               </Link>
+
               <Link
-                className="flex items-center gap-4 font-secondary text-white text-sm tracking-widest w-50  py-3 px-5 border transition-all duration-200 ease-in-out hover:bg-white hover:text-black hover:border"
+                className="flex w-50 items-center gap-4 border px-5 py-3 font-secondary text-sm tracking-widest text-white transition-all duration-200 ease-in-out hover:bg-white hover:text-black"
                 to="/contatti"
               >
-                CONTACT US <ArrowRight5 size={20} />
+                {t("home.visitUs.buttons.contact")}
+                <ArrowRight5 size={20} />
               </Link>
             </div>
           </div>
         </div>
-        <div className="w-full h-[450px]">
+
+        {/* MAP */}
+        <div className="h-[450px] w-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11841.79981430501!2d9.2298137927498!3d45.5295000218314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1790377887119!5m2!1sit!2sit"
-            className="w-full h-full border-0"
+            className="h-full w-full border-0"
             allowFullScreen
             loading="lazy"
             referrerPolicy="strict-origin-when-cross-origin"
-          ></iframe>
+            title="Google Maps - Barber shop location"
+          />
         </div>
       </div>
     </section>

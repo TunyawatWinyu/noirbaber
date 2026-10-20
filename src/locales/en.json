@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "service": "SERVICES",
+    "gallery": "GALLERY",
+    "contact": "CONTACT",
+    "booking": "BOOK NOW",
+    "mobileBooking": "Book a table",
+    "openMenu": "Open menu"
+  },
+  "home": {
+    "hero": {
+      "established": "MILANO — EST. 2018",
+      "title": "PRECISION IN EVERY CUT.",
+      "description": "Modern grooming, shaped around the individual. A considered studio for precision cuts and quiet confidence.",
+      "bookButton": "BOOK AN APPOINTMENT",
+      "serviceButton": "EXPLORE SERVICES"
+    },
+    "craft": {
+      "label": "THE CRAFT",
+      "title": "CRAFTED WITH PRECISION."
+    },
+    "essential": {
+      "label": "01 - SERVICES",
+      "title": "THE ESSENTIALS.",
+      "description": "A focused menu. Clear choices, precise timings, no unnecessary extras.",
+      "button": "VIEW ALL SERVICES",
+      "cards": [
+        {
+          "number": "01",
+          "title": "HAIRCUT",
+          "description": "A precise haircut tailored to your style and personality.",
+          "price": "45 min / €30"
+        },
+        {
+          "number": "02",
+          "title": "BEARD",
+          "description": "Professional beard grooming for a clean and refined look.",
+          "price": "50 min / €20"
+        },
+        {
+          "number": "03",
+          "title": "COMBO",
+          "description": "The complete experience: haircut and beard grooming.",
+          "price": "50 min / €45"
+        }
+      ]
+    },
+    "more": {
+      "label": "02 — OUR PHILOSOPHY",
+      "title": "MORE THAN A HAIRCUT.",
+      "description": "We listen first, then shape every line with purpose.\nThe result is personal, precise and built to last.",
+      "stats": {
+        "years": "YEARS",
+        "rating": "RATING",
+        "clients": "CLIENTS"
+      },
+      "button": "OUR STORY"
+    },
+    "details": {
+      "label": "03 — SELECTED WORK",
+      "title": "THE DETAILS.",
+      "button": "VIEW GALLERY"
+    },
+    "team": {
+      "label": "04 — THE TEAM",
+      "title": "MEET THE BARBERS.",
+      "staff": {
+        "barber1": {
+          "role": "BARBER",
+          "skill": "FADE SPECIALIST"
+        },
+        "barber2": {
+          "role": "BARBER",
+          "skill": "BEARD EXPERT"
+        }
+      }
+    },
+    "customerReview": {
+      "label": "CLIENT NOTES",
+      "reviews": {
+        "1": "Fantastic experience. Elegant atmosphere and very professional staff.",
+        "2": "I've finally found my trusted barber. Great attention to detail.",
+        "3": "A well-kept place with a pleasant atmosphere. The haircut was done with great precision.",
+        "4": "Excellent service from start to finish. I'll definitely be back.",
+        "5": "Quality, professionalism and attention to detail. Highly recommended."
+      },
+      "rating": {
+        "excellent": "EXCELLENT",
+        "veryGood": "VERY GOOD"
+      }
+    },
+    "visitUs": {
+      "label": "MILAN, ITALY",
+      "title": "COME VISIT US.",
+      "address": {
+        "label": "ADDRESS",
+        "street": "VIA EXAMPLE 21",
+        "city": "Milan, Italy"
+      },
+      "openingHours": {
+        "label": "OPENING HOURS",
+        "weekdays": "MON — FRI 09:00 — 19:30",
+        "saturday": "SAT 09:00 — 18:00",
+        "sunday": "SUN CLOSED"
+      },
+      "buttons": {
+        "directions": "GET DIRECTIONS",
+        "contact": "CONTACT US"
+      }
+    },
+    "footer": {
+      "description": "Modern grooming.\nTimeless style.",
+      "navigate": "NAVIGATE",
+      "visit": "VISIT",
+      "address": "VIA EXAMPLE 22",
+      "hours": {
+        "weekdays": "MON — FRI \n09:00 — 19:30",
+        "saturday": "SAT \n09:00 — 18:00",
+        "sunday": "SUN CLOSED"
+      }
+    }
+  },
+  "service": {
+    "serviceHero": {
+      "label": "OUR SERVICES",
+      "title": "SERVICES &\nRITUALS.",
+      "description": "A carefully curated selection of services, each tailored to your features, routine, and individual style."
+    },
+    "cuts": {
+      "haircuts": "HAIRCUTS",
+      "minutes": "min",
+      "services": {
+        "1": {
+          "1": {
+            "name": "PRECISION HAIRCUTS",
+            "description": "Consultation, wash, cut and considered styling."
+          },
+          "2": {
+            "name": "SIGNATURE FADE",
+            "description": "Seamless skin fade with a tailored finish."
+          },
+          "3": {
+            "name": "SCISSOR CUT",
+            "description": "Shape and movement built entirely by hand."
+          }
+        },
+        "2": {
+          "1": {
+            "name": "BEARD DESIGN",
+            "description": "Beard trim, precise shaping and finish."
+          },
+          "2": {
+            "name": "BEARD RITUAL",
+            "description": "Hot towel, shape, detail and conditioning."
+          }
+        },
+        "3": {
+          "1": {
+            "name": "FULL GROOMING",
+            "description": "Haircut, beard shaping and complete styling."
+          },
+          "2": {
+            "name": "THE NOIR SESSION",
+            "description": "Our complete cut, beard and care ritual."
+          }
+        },
+        "4": {
+          "1": {
+            "name": "CLEAN FINISH",
+            "description": "Neckline, contours and styling refresh."
+          },
+          "2": {
+            "name": "GREY BLENDING",
+            "description": "Natural tonal blending for hair or beard."
+          }
+        }
+      }
+    }
+  }
+}

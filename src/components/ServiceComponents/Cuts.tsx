@@ -1,50 +1,70 @@
 import { ArrowRightUp } from "reicon-react";
+import { useTranslation } from "react-i18next";
 import { typeCuts } from "../../Data/Data";
 
 const Cuts = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-main-bg px-15">
-      {typeCuts.map((type) => {
-        return (
-          <div className="border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 flex flex-col lg:flex-row lg:justify-between py-20">
-            <div className="flex flex-col items-center lg:items-baseline gap-4">
-              <span className="font-secondary font-semibold tracking-widest text-xs text-effect">
-                0{type.id}
-              </span>
-              <h1 className="text-6xl font-main text-white">{type.type}</h1>
-            </div>
-            <div>
-              {type.cuts.map((cut) => {
-                return (
-                  <div className="w-full flex flex-col lg:flex-row lg:justify-between gap-10 lg:gap-30 items-center border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 mt-5 lg:mt-0 py-6">
-                    <div className="flex flex-col lg:flex-row lg:justify-center items-center">
-                      <p className="font-main text-4xl text-white">
-                        {cut.name}
-                      </p>
-                    </div>
-                    <div className="flex flex-col lg:flex-row justify-center items-center">
-                      <p className="font-secondary lg:w-full text-sm text-secondary-font">
-                        {cut.description}
-                      </p>
-                    </div>
-                    <div className="flex gap-6 items-center justify-center">
-                      <div className="flex flex-col">
-                        <span className="font-main text-white text-3xl">
-                          €{cut.price}
-                        </span>
-                        <span className="flex font-secondary text-xs text-secondary-font">
-                          {cut.time} min
-                        </span>
-                      </div>
-                      <ArrowRightUp className="text-white" size={20} />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+      {typeCuts.map((type) => (
+        <div
+          key={type.id}
+          className="flex flex-col border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 py-20 lg:flex-row lg:justify-between"
+        >
+          {/* CATEGORY */}
+          <div className="flex flex-col items-center gap-4 lg:items-baseline">
+            <span className="font-secondary text-xs font-semibold tracking-widest text-effect">
+              0{type.id}
+            </span>
+
+            <h2 className="font-main text-6xl text-white">
+              {t(type.translationKey)}
+            </h2>
           </div>
-        );
-      })}
+
+          {/* SERVICES */}
+          <div>
+            {type.cuts.map((cut) => (
+              <div
+                key={`${type.id}-${cut.id}`}
+                className="mt-5 grid w-full grid-cols-1 items-center gap-6 border-t border-b border-b-secondary-font/20 border-t-secondary-font/20 py-6 md:grid-cols-[minmax(220px,1fr)_minmax(250px,1.5fr)_100px] md:gap-10 lg:mt-0"
+              >
+                {/* NAME */}
+                <div className="min-w-0">
+                  <p className="font-main text-2xl text-white tracking-widest">
+                    {t(`service.cuts.services.${type.id}.${cut.id}.name`)}
+                  </p>
+                </div>
+
+                {/* DESCRIPTION */}
+                <div className="min-w-0">
+                  <p className="font-secondary text-sm text-secondary-font">
+                    {t(
+                      `service.cuts.services.${type.id}.${cut.id}.description`,
+                    )}
+                  </p>
+                </div>
+
+                {/* PRICE AND TIME */}
+                <div className="flex items-center justify-between gap-6 md:justify-self-end">
+                  <div className="flex flex-col">
+                    <span className="font-main text-3xl text-white">
+                      €{cut.price}
+                    </span>
+
+                    <span className="font-secondary text-xs text-secondary-font">
+                      {cut.time} {t("service.cuts.minutes")}
+                    </span>
+                  </div>
+
+                  <ArrowRightUp className="text-white" size={20} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </section>
   );
 };

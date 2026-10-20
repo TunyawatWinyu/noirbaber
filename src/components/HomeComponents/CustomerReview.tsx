@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { Star } from "reicon-react";
+import { useTranslation } from "react-i18next";
 import { reviews } from "../../Data/Data";
 
 const CustomerReview = () => {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const { t } = useTranslation();
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const currentReview = reviews[currentIndex];
 
   const next = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
@@ -14,47 +19,58 @@ const CustomerReview = () => {
   };
 
   return (
-    <section className="bg-main-bg h-full w-full py-30 border-b border-b-secondary-font/20">
-      <div className="flex flex-col gap-8 justify-center items-center">
-        <span className="font-secondary text-xs text-effect tracking-wider">
-          CLIENT NOTES
+    <section className="h-full w-full border-b border-b-secondary-font/20 bg-main-bg py-30">
+      <div className="flex flex-col items-center justify-center gap-8">
+        <span className="font-secondary text-xs tracking-wider text-effect">
+          {t("home.customerReview.label")}
         </span>
+
+        {/* REVIEW */}
         <div className="flex flex-col items-center">
-          {/* CARD */}
+          <div className="mt-4 flex w-full flex-col gap-4 px-10 text-center lg:w-200 lg:px-0">
+            <h3 className="font-main text-3xl tracking-widest text-white lg:text-6xl">
+              {`"${t(`home.customerReview.reviews.${currentReview.id}`)}"`}
+            </h3>
 
-          <div className="flex flex-col gap-4 mt-4 text-center w-full px-10 lg:w-200 lg:px-0">
-            <h3 className="text-3xl lg:text-6xl text-white font-main tracking-widest">{`"${reviews[currentIndex].review}"`}</h3>
-
-            <div className="flex justify-center items-center gap-1 mt-4">
-              {Array.from({ length: reviews[currentIndex].rating }).map(
-                (_, index) => (
-                  <Star
-                    weight="Filled"
-                    key={index}
-                    className="text-primary text-effect"
-                    size={16}
-                  />
-                ),
-              )}
+            {/* STARS */}
+            <div className="mt-4 flex items-center justify-center gap-1">
+              {Array.from({ length: currentReview.rating }).map((_, index) => (
+                <Star
+                  weight="Filled"
+                  key={index}
+                  className="text-primary text-effect"
+                  size={16}
+                />
+              ))}
             </div>
 
-            <p className="text-secondary-font font-secondary tracking-widest">
-              {reviews[currentIndex].name}
+            {/* RATING TEXT */}
+            <p className="font-secondary tracking-widest text-effect">
+              {currentReview.rating === 5
+                ? t("home.customerReview.rating.excellent")
+                : t("home.customerReview.rating.veryGood")}
+            </p>
+
+            {/* CUSTOMER NAME */}
+            <p className="font-secondary tracking-widest text-secondary-font">
+              {currentReview.name}
             </p>
           </div>
 
           {/* BUTTONS */}
-          <div className="flex gap-4 mt-8">
+          <div className="mt-8 flex gap-4">
             <button
               onClick={prev}
-              className="border border-secondary-font px-6 py-3 text-white transition-colors hover:text-effect hover:border-effect"
+              aria-label="Previous review"
+              className="border border-secondary-font px-6 py-3 text-white transition-colors hover:border-effect hover:text-effect"
             >
               ←
             </button>
 
             <button
               onClick={next}
-              className="border border-secondary-font px-6 py-3 text-white transition-colors hover:text-effect hover:border-effect"
+              aria-label="Next review"
+              className="border border-secondary-font px-6 py-3 text-white transition-colors hover:border-effect hover:text-effect"
             >
               →
             </button>

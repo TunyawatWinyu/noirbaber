@@ -1,24 +1,29 @@
+import { useTranslation } from "react-i18next";
+
 const ServiceHero = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="bg-main-bg px-15 flex flex-col">
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-10 pt-40 pb-30">
+    <section className="flex flex-col bg-main-bg px-15">
+      <div className="flex flex-col gap-10 pt-40 pb-30 lg:flex-row lg:justify-between lg:items-end">
         <div className="flex flex-col gap-8">
           <span className="font-secondary text-xs text-effect tracking-wider">
-            THE MENU
+            {t("service.serviceHero.label")}
           </span>
-          <h1 className="text-5xl lg:text-8xl font-main text-white tracking-wider">
-            SERVICES & <br /> RITUALS.
+
+          <h1 className="whitespace-pre-line font-main text-5xl text-white tracking-wider lg:text-8xl">
+            {t("service.serviceHero.title")}
           </h1>
         </div>
+
         <div className="flex w-full lg:w-100">
-          <p className="text-secondary-font font-secondary text-md">
-            {" "}
-            focused edit of services, each tailored to your features, routine
-            and individual style.
+          <p className="font-secondary text-md text-secondary-font">
+            {t("service.serviceHero.description")}
           </p>
         </div>
       </div>
-      <div className="hidden md:block border-t border-t-secondary-font/20 h-20"></div>
+
+      <div className="hidden h-20 border-t border-t-secondary-font/20 md:block"></div>
     </section>
   );
 };

@@ -4,7 +4,6 @@ import {
   type PropsEssential,
   type NavbarMenu,
   type Staff,
-  type Review,
 } from "./interface";
 
 // Image import
@@ -21,23 +20,20 @@ import david from "../assets/img/team-david.jpg";
 export const typeCuts: CutType[] = [
   {
     id: 1,
-    type: "HAIRCUTS",
+    translationKey: "service.cuts.haircuts",
     cuts: [
       {
-        name: "PRECISION HAIRCUTS",
-        description: "Consultation, wash, cut and considered styling.",
+        id: 1,
         price: 25,
         time: 45,
       },
       {
-        name: "SIGNATURE FADE",
-        description: "Seamless skin fade with a tailored finish.",
+        id: 2,
         price: 28,
         time: 50,
       },
       {
-        name: "SCISSOR CUT",
-        description: "Shape and movement built entirely by hand.",
+        id: 3,
         price: 30,
         time: 50,
       },
@@ -45,17 +41,15 @@ export const typeCuts: CutType[] = [
   },
   {
     id: 2,
-    type: "BEARD",
+    translationKey: "BEARD",
     cuts: [
       {
-        name: "BEARD DESIGN",
-        description: "Beard trim, precise shaping and finish.",
+        id: 1,
         price: 15,
         time: 25,
       },
       {
-        name: "BEARD RITUAL",
-        description: "Hot towel, shape, detail and conditioning.",
+        id: 2,
         price: 22,
         time: 35,
       },
@@ -63,17 +57,15 @@ export const typeCuts: CutType[] = [
   },
   {
     id: 3,
-    type: "COMBINATIONS",
+    translationKey: "COMBINATIONS",
     cuts: [
       {
-        name: "FULL GROOMING",
-        description: "Haircut, beard shaping and complete styling.",
+        id: 1,
         price: 35,
         time: 60,
       },
       {
-        name: "THE NOIR SESSION",
-        description: "Our complete cut, beard and care ritual.",
+        id: 2,
         price: 45,
         time: 75,
       },
@@ -81,17 +73,15 @@ export const typeCuts: CutType[] = [
   },
   {
     id: 4,
-    type: "EXTRAS",
+    translationKey: "EXTRAS",
     cuts: [
       {
-        name: "CLEAN FINISH",
-        description: "Neckline, contours and styling refresh.",
+        id: 1,
         price: 12,
         time: 20,
       },
       {
-        name: "GREY BLENDING",
-        description: "Natural tonal blending for hair or beard.",
+        id: 2,
         price: 20,
         time: 30,
       },
@@ -149,11 +139,11 @@ export const Essential_props: PropsEssential[] = [
 ];
 
 export const menu_navbar: NavbarMenu[] = [
-  { name: "HOME", path: "/home" },
-  { name: "SERVICE", path: "/service" },
-  { name: "ABOUT", path: "/about" },
-  { name: "GALLERY", path: "/gallery" },
-  { name: "CONTATTI", path: "/contatti" },
+  { translationKey: "nav.home", path: "/home" },
+  { translationKey: "nav.service", path: "/service" },
+  { translationKey: "nav.about", path: "/about" },
+  { translationKey: "nav.gallery", path: "/gallery" },
+  { translationKey: "nav.contact", path: "/contatti" },
 ];
 
 export const staff: Staff[] = [
@@ -171,44 +161,36 @@ export const staff: Staff[] = [
   },
 ];
 
+export type Review = {
+  id: number;
+  name: string;
+  rating: number;
+};
+
 export const reviews: Review[] = [
   {
     id: 1,
     name: "Luca Bianchi",
     rating: 5,
-    ratingText: "Excellent",
-    review:
-      "Esperienza fantastica. Ambiente elegante e personale molto professionale.",
   },
   {
     id: 2,
     name: "Marco Rossi",
     rating: 5,
-    ratingText: "Excellent",
-    review:
-      "Finalmente ho trovato il mio barbiere di fiducia. Grande attenzione ai dettagli.",
   },
   {
     id: 3,
     name: "Andrea Moretti",
     rating: 4,
-    ratingText: "Very Good",
-    review:
-      "Locale davvero curato e atmosfera piacevole. Il taglio è stato fatto con grande precisione.",
   },
   {
     id: 4,
     name: "Davide Romano",
     rating: 5,
-    ratingText: "Excellent",
-    review: "Servizio eccellente dall'inizio alla fine. Tornerò sicuramente.",
   },
   {
     id: 5,
     name: "Matteo Ferri",
     rating: 5,
-    ratingText: "Excellent",
-    review:
-      "Qualità, professionalità e attenzione ai dettagli. Consigliatissimo.",
   },
 ];

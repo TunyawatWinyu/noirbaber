@@ -6,6 +6,7 @@ import About from "./Page/About";
 import Gallery from "./Page/Gallery";
 import Contact from "./Page/Contact";
 import { useEffect } from "react";
+import Booking from "./Page/Booking";
 
 function App() {
   const ScrollTop = () => {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contatti" element={<Contact />} />
+        <Route path="/prenota" element={<Booking />} />
       </Routes>
     </div>
   );

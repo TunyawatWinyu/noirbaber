@@ -1,51 +1,70 @@
 import { Link } from "react-router-dom";
-import { SquareShare } from "reicon-react";
-import { Essential_props } from "../../Data/Data";
+import { Server, SquareShare } from "reicon-react";
+import { useTranslation } from "react-i18next";
+
+type Service = {
+  number: string;
+  title: string;
+  description: string;
+  price: string;
+};
 
 const Essential = () => {
+  const { t } = useTranslation();
+
+  const services = t("home.essential.cards", {
+    returnObjects: true,
+  }) as Service[];
+
   return (
-    <section className="flex flex-col bg-secondary-font/20 gap-8 py-20 px-10 xl:px-5 2xl:px-45">
-      <div className="flex flex-col justify-center lg:flex-row lg:justify-between lg:items-end-safe mx-10">
+    <section className="flex flex-col gap-8 bg-secondary-font/20 px-10 py-20 xl:px-5 2xl:px-45">
+      <div className="mx-10 flex flex-col justify-center gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div className="flex flex-col justify-end gap-4">
-          <p className="font-secondary font-semibold tracking-widest text-xs text-effect">
-            01 - SERVICES
+          <p className="font-secondary text-xs font-semibold tracking-widest text-effect">
+            {t("home.essential.label")}
           </p>
-          <h1 className="font-main tracking-widest font-black text-5xl lg:text-8xl">
-            THE ESSENTIALS.
-          </h1>
+
+          <h2 className="font-main text-5xl font-black tracking-widest lg:text-8xl">
+            {t("home.essential.title")}
+          </h2>
         </div>
-        <div className="w-full lg:w-100 ">
-          <p className="font-secondary text-gray-600">
-            A focused menu. Clear choices, precise timings, no unnecessary
-            extras.
-          </p>
-        </div>
+
+        <p className="w-full font-secondary text-gray-600 lg:w-100">
+          {t("home.essential.description")}
+        </p>
       </div>
+
       <div className="mx-5 flex flex-col gap-4 lg:mx-10 lg:flex-row">
-        {Essential_props.map((el, index) => (
-          <div
-            key={index}
-            className="flex flex-col gap-5 w-full lg:w-100 border border-gray-600/25 p-8 min-h-50 "
+        {services.map((service) => (
+          <article
+            key={service.number}
+            className="flex min-h-50 w-full flex-col gap-5 border border-gray-600/25 p-8 lg:w-100"
           >
-            <h1 className="text-5xl font-main text-effect/35">{el.number}</h1>
+            <span className="font-main text-5xl text-effect/35">
+              {service.number}
+            </span>
 
             <div className="mt-auto flex flex-col gap-4">
-              <h3 className="text-4xl font-main text-black">{el.h3}</h3>
+              <h3 className="font-main text-4xl text-black">{service.title}</h3>
 
-              <p className="font-secondary text-sm text-gray-600">{el.p}</p>
+              <p className="font-secondary text-sm text-gray-600">
+                {service.description}
+              </p>
 
-              <span className="font-secondary text-sm font-semibold tracking-widest text-black">
-                {el.span}
+              <span className="font-secondary text-xs font-semibold tracking-widest text-black">
+                {service.price}
               </span>
             </div>
-          </div>
+          </article>
         ))}
       </div>
+
       <Link
-        className="flex justify-center mx-5 lg:mx-10 items-center gap-4 py-3 px-3 w-60 text-xl tracking-widest font-main border xl:border-none xl:transition-all xl:duration-200 xl:ease-in-out xl:hover:bg-effect"
         to="/service"
+        className="mx-5 flex w-60 items-center justify-center gap-4 border px-3 py-3 font-main text-xl tracking-widest transition-all duration-200 ease-in-out hover:bg-effect lg:mx-10 xl:border-none"
       >
-        VIEW ALL SERVICES <SquareShare size={15} />
+        {t("home.essential.button")}
+        <SquareShare size={15} />
       </Link>
     </section>
   );

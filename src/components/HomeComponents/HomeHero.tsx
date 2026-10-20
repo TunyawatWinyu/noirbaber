@@ -1,27 +1,24 @@
 import { ForwardRight } from "reicon-react";
 import homeHero from "../../assets/img/noir-hero.jpg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HomeHero = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col lg:flex-row justify-between gap-16 px-10 py-30 lg:py-40 xl:px-16 2xl:px-24 bg-main-bg border-b border-b-secondary-font">
       {/* LEFT */}
       <div className="flex flex-col gap-4 min-w-0">
         <span className="font-secondary tracking-widest font-semibold text-xs text-effect">
-          MILANO - EST. 2018
+          {t("home.hero.established")}
         </span>
 
-        <h1 className="text-7xl xl:text-8xl 2xl:text-9xl text-white font-main">
-          PRECISION <br />
-          IN EVERY <br />
-          CUT.
+        <h1 className=" w-100 text-7xl xl:text-8xl 2xl:text-9xl text-white font-main">
+          {t("home.hero.title")}
         </h1>
 
         <div className="max-w-xl text-lg font-secondary text-secondary-font mb-9">
-          <p>
-            Modern grooming, shaped around the individual. A considered studio
-            for precision cuts and quiet confidence.
-          </p>
+          <p>{t("home.hero.description")}</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-6">
@@ -29,7 +26,7 @@ const HomeHero = () => {
             className="flex gap-4 font-secondary font-semibold text-sm py-4 px-6 tracking-widest text-black bg-white transition duration-200 ease-in-out hover:bg-effect"
             to="/booking"
           >
-            BOOK AN APPOINTMENT
+            {t("home.hero.bookButton")}
             <ForwardRight size={20} />
           </Link>
 
@@ -37,7 +34,7 @@ const HomeHero = () => {
             className="flex gap-4 font-secondary font-semibold text-sm py-4 px-6 tracking-widest text-white border border-white transition duration-200 ease-in-out hover:bg-white hover:text-black"
             to="/service"
           >
-            EXPLORE SERVICE
+            {t("home.hero.serviceButton")}
             <ForwardRight size={20} />
           </Link>
 
