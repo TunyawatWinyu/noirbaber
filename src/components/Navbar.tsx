@@ -5,12 +5,17 @@ import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
-  const [isOpen, setIsOpen] = useState(false);
-
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const { t, i18n } = useTranslation();
 
   const translate = (lang: string) => {
-    i18n.changeLanguage(lang.toLowerCase());
+    setIsLoading(true);
+
+    setTimeout(async () => {
+      await i18n.changeLanguage(lang.toLowerCase());
+      setIsLoading(false);
+    }, 200);
   };
 
   const location = useLocation();
@@ -69,6 +74,7 @@ const Navbar = () => {
               <li key={lang}>
                 <button
                   onClick={() => translate(lang)}
+                  disabled={isLoading}
                   className={`py-2 px-4 lg:py-4 lg:px-6 cursor-pointer transition-all duration-200
                     hover:bg-white hover:text-black
                     ${
