@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Server, SquareShare } from "reicon-react";
 import { useTranslation } from "react-i18next";
 
 type Service = {
