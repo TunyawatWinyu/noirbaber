@@ -186,5 +186,109 @@
       "title": "FALLO TUO.",
       "button": "PRENOTA ORA"
     }
+  },
+  "about": {
+    "hero": {
+      "label": "LA NOSTRA STORIA",
+      "title": "COSTRUITO SUI DETTAGLI.",
+      "description": "NOIR nasce da una semplice convinzione: lo stile personale merita tempo, precisione e autentica maestria."
+    },
+    "philosophy": {
+      "imageAlt": "Strumenti e mani del barbiere durante il lavoro",
+      "label": "LA NOSTRA FILOSOFIA",
+      "title": "MOLTO PIÙ DI UN TAGLIO.",
+      "description1": "Abbiamo creato NOIR come alternativa alla cura personale frettolosa e impersonale. Ogni appuntamento inizia con una conversazione e termina solo quando ogni linea, texture e sfumatura ci sembra perfetta.",
+      "description2": "La tecnica moderna è importante. Ma lo è anche sapere quando non esagerare. Il nostro lavoro è pensato per apparire naturale, ricrescere in modo ordinato e sentirsi autenticamente tuo."
+    },
+    "stats": {
+      "imageAlt": "Interno dello studio NOIR",
+      "years": "ANNI DI ESPERIENZA",
+      "clients": "CLIENTI SERVITI",
+      "rating": "VALUTAZIONE MEDIA"
+    },
+    "team": {
+      "label": "IL NOSTRO TEAM",
+      "title": "I NOSTRI BARBIERI.",
+      "imageAlt": "Barbiere {{name}}",
+      "members": {
+        "marco": {
+          "role": "BARBIERE SENIOR",
+          "skill": "SPECIALISTA FADE"
+        },
+        "david": {
+          "role": "BARBIERE",
+          "skill": "TAGLI CLASSICI"
+        }
+      }
+    }
+  },
+  "gallery": {
+    "hero": {
+      "label": "LAVORI SELEZIONATI",
+      "title": "TAGLI. ARTE. PERSONALITÀ.",
+      "description": "Un'esplorazione di forme, texture e dettagli: una selezione dei lavori realizzati nel nostro studio di Milano."
+    },
+    "gallery": {
+      "images": {
+        "fade": {
+          "title": "SFUMATURA",
+          "alt": "Taglio con sfumatura"
+        },
+        "beard": {
+          "title": "BARBA",
+          "alt": "Taglio e cura della barba"
+        },
+        "studio": {
+          "title": "STUDIO",
+          "alt": "Interno dello studio NOIR"
+        },
+        "haircut": {
+          "title": "TAGLIO",
+          "alt": "Taglio di capelli"
+        },
+        "detail": {
+          "title": "DETTAGLI",
+          "alt": "Dettagli di un taglio di capelli"
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "CONTATTACI",
+      "titleLine1": "PARLIAMO.",
+      "titleLine2": "",
+      "description": "Domande, richieste particolari o informazioni sugli appuntamenti: il nostro team è qui per aiutarti."
+    },
+    "info": {
+      "address": "INDIRIZZO",
+      "contact": "CONTATTI",
+      "hours": "ORARI DI APERTURA",
+      "weekdays": "LUN — VEN",
+      "saturday": "SAB",
+      "sunday": "DOM CHIUSO"
+    },
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il tuo nome",
+      "email": "Email",
+      "emailPlaceholder": "La tua email",
+      "subject": "Oggetto",
+      "subjectPlaceholder": "Oggetto del messaggio",
+      "message": "Messaggio",
+      "messagePlaceholder": "Scrivi il tuo messaggio qui...",
+      "submit": "INVIA MESSAGGIO",
+      "loading": "INVIO IN CORSO...",
+      "successTitle": "MESSAGGIO RICEVUTO",
+      "successMessage": "Ti ricontatteremo al più presto.",
+      "errors": {
+        "nameRequired": "Inserisci il tuo nome.",
+        "emailRequired": "Inserisci il tuo indirizzo email.",
+        "emailInvalid": "Inserisci un indirizzo email valido.",
+        "subjectRequired": "Inserisci l'oggetto del messaggio.",
+        "messageRequired": "Inserisci il tuo messaggio.",
+        "messageMinLength": "Il messaggio deve contenere almeno 10 caratteri."
+      }
+    }
   }
 }

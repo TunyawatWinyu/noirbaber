@@ -11,6 +11,7 @@ export interface CutType {
 }
 
 export interface DetailsImage {
+  id: string;
   src: string;
   title: string;
   className: string;
@@ -29,6 +30,7 @@ export interface NavbarMenu {
 }
 
 export interface Staff {
+  id: string;
   name: string;
   role: string;
   skill: string;
@@ -39,4 +41,18 @@ export interface Review {
   id: number;
   name: string;
   rating: number;
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+export interface ContactFormErrors {
+  name?: string;
+  email?: string;
+  subject?: string;
+  message?: string;
 }

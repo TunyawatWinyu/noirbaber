@@ -38,12 +38,12 @@ const Details = () => {
           >
             <img
               src={image.src}
-              alt={image.title}
+              alt={t(`gallery.gallery.images.${image.id}.alt`)}
               className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
 
             <span className="absolute bottom-5 left-5 font-secondary text-xs font-semibold tracking-widest text-white">
-              {image.title}
+              {t(`gallery.gallery.images.${image.id}.title`)}
             </span>
           </div>
         ))}

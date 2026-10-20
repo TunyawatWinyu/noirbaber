@@ -91,26 +91,31 @@ export const typeCuts: CutType[] = [
 
 export const img_details: DetailsImage[] = [
   {
+    id: "fade",
     src: image1,
     title: "FADE",
     className: "col-span-1 row-span-2",
   },
   {
+    id: "beard",
     src: image2,
     title: "BEARD",
     className: "col-span-1 row-span-1",
   },
   {
+    id: "studio",
     src: image3,
     title: "STUDIO",
     className: "col-span-2 row-span-1",
   },
   {
+    id: "haircut",
     src: image4,
     title: "HAIRCUT",
     className: "col-span-1 row-span-1",
   },
   {
+    id: "detail",
     src: image5,
     title: "DETAIL",
     className: "col-span-2 row-span-1",
@@ -148,15 +153,17 @@ export const menu_navbar: NavbarMenu[] = [
 
 export const staff: Staff[] = [
   {
-    name: "ALEX MORETTI",
-    role: "MASTER BABER",
-    skill: "Fade & Modern Cut",
+    id: "marco",
+    name: "Marco",
+    role: "SENIOR BARBER",
+    skill: "FADE SPECIALIST",
     image: alex,
   },
   {
-    name: "DAVID ROMANO",
-    role: "BABER",
-    skill: "Clssic Cuts & Beard",
+    id: "david",
+    name: "David",
+    role: "BARBER",
+    skill: "CLASSIC CUTS",
     image: david,
   },
 ];
