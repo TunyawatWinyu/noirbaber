@@ -30,7 +30,7 @@ const Details = () => {
       </div>
 
       {/* GALLERY */}
-      <div className="mx-5 mt-20 flex flex-col gap-3 lg:grid lg:h-[650px] lg:grid-cols-4 lg:grid-rows-2">
+      <div className="mx-5 mt-20 flex flex-col gap-3 lg:grid lg:h-155 lg:grid-cols-4 lg:grid-rows-2">
         {img_details.map((image) => (
           <div
             key={image.title}
