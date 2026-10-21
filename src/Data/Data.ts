@@ -4,6 +4,9 @@ import {
   type PropsEssential,
   type NavbarMenu,
   type Staff,
+  type Review,
+  type Service,
+  type Time,
 } from "./interface";
 
 // Image import
@@ -148,7 +151,7 @@ export const menu_navbar: NavbarMenu[] = [
   { translationKey: "nav.service", path: "/service" },
   { translationKey: "nav.about", path: "/about" },
   { translationKey: "nav.gallery", path: "/gallery" },
-  { translationKey: "nav.contact", path: "/contatti" },
+  { translationKey: "nav.contact", path: "/contact" },
 ];
 
 export const staff: Staff[] = [
@@ -167,12 +170,6 @@ export const staff: Staff[] = [
     image: david,
   },
 ];
-
-export type Review = {
-  id: number;
-  name: string;
-  rating: number;
-};
 
 export const reviews: Review[] = [
   {
@@ -200,4 +197,58 @@ export const reviews: Review[] = [
     name: "Matteo Ferri",
     rating: 5,
   },
+];
+
+export const services: Service[] = [
+  {
+    id: 1,
+    nameKey: "booking.form.services.haircut",
+    price: 20,
+  },
+  {
+    id: 2,
+    nameKey: "booking.form.services.beard",
+    price: 15,
+  },
+  {
+    id: 3,
+    nameKey: "booking.form.services.haircutBeard",
+    price: 30,
+  },
+  {
+    id: 4,
+    nameKey: "booking.form.services.fullGrooming",
+    price: 35,
+  },
+  {
+    id: 5,
+    nameKey: "booking.form.services.shaving",
+    price: 10,
+  },
+  {
+    id: 6,
+    nameKey: "booking.form.services.facial",
+    price: 25,
+  },
+];
+
+export const BookingTime: Time[] = [
+  { id: 1, time: "09:00" },
+  { id: 2, time: "09:30" },
+  { id: 3, time: "10:00" },
+  { id: 4, time: "10:30" },
+  { id: 5, time: "11:00" },
+  { id: 6, time: "11:30" },
+  { id: 7, time: "12:00" },
+  { id: 8, time: "12:30" },
+  { id: 9, time: "14:00" },
+  { id: 10, time: "14:30" },
+  { id: 11, time: "15:00" },
+  { id: 12, time: "15:30" },
+  { id: 13, time: "16:00" },
+  { id: 14, time: "16:30" },
+  { id: 15, time: "17:00" },
+  { id: 16, time: "17:30" },
+  { id: 17, time: "18:00" },
+  { id: 18, time: "18:30" },
 ];

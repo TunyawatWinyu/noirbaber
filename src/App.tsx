@@ -26,8 +26,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contatti" element={<Contact />} />
-        <Route path="/prenota" element={<Booking />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </div>
   );

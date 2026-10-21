@@ -290,5 +290,58 @@
         "messageMinLength": "Il messaggio deve contenere almeno 10 caratteri."
       }
     }
+  },
+  "booking": {
+    "hero": {
+      "label": "APPUNTAMENTI",
+      "titleLine1": "RISERVA",
+      "titleLine2": "IL TUO TEMPO.",
+      "description": "Scegli il servizio e l’orario che preferisci. Confermeremo il tuo appuntamento al più presto."
+    },
+    "info": {
+      "label": "PRIMA DI PRENOTARE",
+      "description": "Le richieste vengono esaminate durante gli orari di apertura. Per disponibilità in giornata, chiamaci direttamente."
+    },
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il tuo nome",
+      "email": "Email",
+      "emailPlaceholder": "La tua email",
+      "phone": "Telefono",
+      "phonePlaceholder": "Il tuo numero di telefono",
+      "submit": "INVIA LA PRENOTAZIONE",
+      "loading": "INVIO IN CORSO...",
+      "successTitle": "PRENOTAZIONE INVIATA",
+      "successMessage": "Grazie per aver prenotato!!",
+      "service": "Scegli il servizio",
+      "serviceDefault": "Scegli un servizio",
+      "services": {
+        "haircut": "Taglio capelli",
+        "beard": "Taglio barba",
+        "haircutBeard": "Taglio capelli e barba",
+        "fullGrooming": "Cura completa",
+        "shaving": "Rasatura",
+        "facial": "Trattamento viso"
+      },
+      "baber": "Scegli il barbiere",
+      "baberDefault": "Scegli il tuo barbiere",
+      "date": "Data",
+      "time": "Orario",
+      "timeDefault": "Scegli un orario",
+      "message": "Messaggio Facoltativo",
+      "messagePlaceholder": "Scrivi il tuo messaggio qui...",
+      "errors": {
+        "nameRequired": "Inserisci il tuo nome.",
+        "emailRequired": "Inserisci il tuo indirizzo email.",
+        "emailInvalid": "Inserisci un indirizzo email valido.",
+        "phoneRequired": "Inserisci il tuo numero di telefono.",
+        "serviceRequired": "Seleziona un servizio.",
+        "baberRequired": "Seleziona un barbiere.",
+        "dateRequired": "Seleziona una data per l'appuntamento.",
+        "timeRequired": "Seleziona un orario per l'appuntamento.",
+        "messageRequired": "Inserisci il tuo messaggio.",
+        "messageMinLength": "Il messaggio deve contenere almeno 10 caratteri."
+      }
+    }
   }
 }

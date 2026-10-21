@@ -290,5 +290,58 @@
         "messageMinLength": "Your message must be at least 10 characters long."
       }
     }
+  },
+  "booking": {
+    "hero": {
+      "label": "BOOKING",
+      "titleLine1": "BOOK",
+      "titleLine2": "YOUR TIME.",
+      "description": "Choose your preferred service and time. We will confirm your appointment as soon as possible."
+    },
+    "info": {
+      "label": "BEFORE BOOKING",
+      "description": "Requests are reviewed during opening hours. For same-day availability, please call us directly."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "Your email",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "submit": "SEND THE RESERVATION",
+      "loading": "SENDING...",
+      "successTitle": "RESERVATION RECEIVED",
+      "successMessage": "Thank you for the reservation!!",
+      "service": "Choose a service",
+      "serviceDefault": "Select a service",
+      "services": {
+        "haircut": "Haircut",
+        "beard": "Beard trim",
+        "haircutBeard": "Haircut and beard",
+        "fullGrooming": "Full grooming",
+        "shaving": "Shaving",
+        "facial": "Facial treatment"
+      },
+      "baber": "Choose a baber",
+      "baberPlaceholder": "Select a baber",
+      "date": "Date",
+      "time": "Time",
+      "timeDefault": "Select a time",
+      "message": "Optional Messsage",
+      "messagePlaceholder": "Write your message here...",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email address.",
+        "emailInvalid": "Please enter a valid email address.",
+        "phoneRequired": "Please enter your phone number.",
+        "serviceRequired": "Please select a service.",
+        "baberRequired": "Please select a barber.",
+        "dateRequired": "Please select an appointment date.",
+        "timeRequired": "Please select an appointment time.",
+        "messageRequired": "Please enter your message.",
+        "messageMinLength": "Your message must contain at least 10 characters."
+      }
+    }
   }
 }

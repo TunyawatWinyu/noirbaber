@@ -56,3 +56,42 @@ export interface ContactFormErrors {
   subject?: string;
   message?: string;
 }
+
+export interface ReservationFormData {
+  name: string;
+  email: string;
+  phone: string;
+  service: string;
+  baber: string;
+  date: string;
+  time: string;
+  message?: string;
+}
+
+export type ReservationFormErrors = {
+  name?: string;
+  email?: string;
+  phone?: string;
+  service?: string;
+  baber?: string;
+  date?: string;
+  time?: string;
+  message?: string;
+};
+
+export interface Service {
+  id: number;
+  nameKey: string;
+  price: number;
+}
+
+export interface Review {
+  id: number;
+  name: string;
+  rating: number;
+}
+
+export interface Time {
+  id: number;
+  time: string;
+}
