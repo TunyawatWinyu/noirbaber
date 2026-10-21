@@ -151,7 +151,7 @@ const Navbar = () => {
             {/* PRENOTAZIONE MOBILE */}
             <li className="pt-2">
               <Link
-                to="/prenotazione"
+                to="/booking"
                 onClick={() => setIsOpen(false)}
                 className={`inline-block tracking-widest text-sm px-6 py-3 font-semibold bg-effect`}
               >
