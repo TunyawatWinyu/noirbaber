@@ -9,6 +9,24 @@
     "mobileBooking": "Prenota un tavolo",
     "openMenu": "Apri menu"
   },
+  "login": {
+    "adminLabel": "AREA AMMINISTRATORE",
+    "title": "ACCEDI",
+    "description": "Solo l’amministratore dello studio può accedere alla dashboard.",
+    "email": "EMAIL",
+    "password": "PASSWORD",
+    "submit": "ACCEDI",
+    "registerPrompt": "Prima configurazione? Crea l’account amministratore"
+  },
+  "register": {
+    "adminLabel": "AREA AMMINISTRATORE",
+    "title": "CREA ACCOUNT ADMIN",
+    "description": "Solo l’amministratore dello studio può accedere alla dashboard.",
+    "email": "EMAIL",
+    "password": "PASSWORD",
+    "submit": "CREA ACCOUNT",
+    "loginPrompt": "Hai già un account? Accedi"
+  },
   "home": {
     "hero": {
       "established": "MILANO — DAL 2018",

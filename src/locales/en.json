@@ -9,6 +9,24 @@
     "mobileBooking": "Book a table",
     "openMenu": "Open menu"
   },
+  "login": {
+    "adminLabel": "ADMINISTRATOR AREA",
+    "title": "SIGN IN",
+    "description": "Only the shop administrator can access the dashboard.",
+    "email": "EMAIL",
+    "password": "PASSWORD",
+    "submit": "SIGN IN",
+    "registerPrompt": "First-time setup? Create the administrator account"
+  },
+  "register": {
+    "adminLabel": "ADMINISTRATOR AREA",
+    "title": "CREATE ADMIN ACCOUNT",
+    "description": "Only the shop administrator can access the dashboard.",
+    "email": "EMAIL",
+    "password": "PASSWORD",
+    "submit": "CREATE ACCOUNT",
+    "loginPrompt": "Already have an account? Sign in"
+  },
   "home": {
     "hero": {
       "established": "MILANO — EST. 2018",

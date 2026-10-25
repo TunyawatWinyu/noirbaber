@@ -7,6 +7,8 @@ import Gallery from "./Page/Gallery";
 import Contact from "./Page/Contact";
 import { useEffect } from "react";
 import Booking from "./Page/Booking";
+import Login from "./Page/Auth/Login";
+import Register from "./Page/Auth/Register";
 
 function App() {
   const ScrollTop = () => {
@@ -28,6 +30,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );
